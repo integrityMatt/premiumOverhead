@@ -137,7 +137,7 @@ li {
   color: black;
 }
 
-/* .btn:hover {
+.btn:hover {
   background: -webkit-gradient(
     linear,
     left top,
@@ -146,7 +146,7 @@ li {
     to(#f2751a)
   );
   background: linear-gradient(180deg, #ffd100 0%, #f2751a 100%);
-} */
+}
 
 a {
   text-decoration: none;
@@ -238,7 +238,14 @@ h5 {
 
 .btn-1 {
   font-size: 1.5rem;
-  background: #facf00;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffd100),
+    to(#f2751a)
+  );
+  background: linear-gradient(180deg, #ffd100 0%, #f2751a 100%);
   border-radius: 5px;
   color: black;
   padding: 10px 20px;
@@ -274,7 +281,7 @@ h5 {
   font-size: 2rem;
 }
 
-/* #about {
+#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,34 +295,10 @@ h5 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-} */
-
-#about {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding-top: 120px;
-}
-
-#about .about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 5vw;
-}
-
-#about .about-content h3 {
-  font-size: 1.5rem;
-}
-
-#about .about-content p {
-  margin-top: 0;
-  padding-top: 0;
-  font-size: 1.1rem;
-  line-height: 130%;
 }
 
 .slideshow-container {
-  margin-left: 3vw;
+  margin-left: 5vw;
   margin-right: 5vw;
   position: relative;
 }
@@ -494,14 +477,7 @@ h5 {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1200px) {
-  #about {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media screen and (max-width: 600px) {
-
   .door_roof {
     border: transparent;
     display: none;
@@ -530,14 +506,14 @@ h5 {
 }
 
 @media screen and (max-width: 1600px) {
-  /* #about {
+  #about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     width: 100vw;
-  } */
+  }
   #about .door {
     margin-left: 1vw;
     margin-right: 5vw;
@@ -567,13 +543,11 @@ h5 {
 }
 
 .whatweoffer_bg {
-  /* background-image: url("../img/whatweoffer.webp"); */
-  background: rgba(39, 39, 39, 0.88);
-  /* background-repeat: no-repeat;
+  background-image: url("../img/whatweoffer.webp");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 723px; */
-  padding-bottom: 120px;
+  min-height: 723px;
 }
 
 .whatweoffer {
@@ -603,7 +577,7 @@ h5 {
 }
 
 .offer-item {
-  max-width: 480px; /*320px*/
+  max-width: 320px;
   margin: 20px;
   padding: 15px;
   color: white;
@@ -616,8 +590,6 @@ h5 {
 
 .offer-item img {
   padding: 0;
-  width: 100%;
-  max-width: 100%;
 }
 
 .offer-item h3 {
@@ -628,25 +600,16 @@ h5 {
   line-height: 130%;
 }
 
-section.process .offer-item h3 {
-  text-align: center;
-}
-
 @media screen and (max-width: 1024px) {
   .offer-item_last {
     margin-bottom: 70px;
   }
 }
 
-.whychoose {
-  padding-top: 75px;
-  padding-bottom: 125px;
-}
-
 .whychoose h1 {
   color: #924004;
   font-weight: 900;
-  /* -webkit-text-stroke: 0.3px black; */
+  -webkit-text-stroke: 0.3px black;
 }
 
 .whychoose_items {
@@ -788,7 +751,7 @@ input[name="email"] {
   resize: none;
 }
 
-button[type="submit"] {
+.submit {
   margin-top: 10px;
   float: right;
   -webkit-transition: all 0.3;
@@ -797,9 +760,15 @@ button[type="submit"] {
   border: none;
 }
 
-
-button[type="submit"]:hover {
-  
+.submit:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffd100),
+    to(#f2751a)
+  );
+  background: linear-gradient(180deg, #ffd100 0%, #f2751a 100%);
 }
 
 #footer {
@@ -1536,104 +1505,3 @@ body.homepage .repair_main {
   padding-top: 45px;
   padding-bottom: 45px;
 }
-
-body.newdoor .repair_main {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-
-body.newdoor .whatweoffer h3 {
-  text-align: center;
-}
-
-body.newdoor #about {
-  grid-template-columns: 1fr;
-  padding-bottom: 50px;
-}
-
-body.newdoor .suppliers_logo {
-  max-width: unset;
-}
-
-body.newdoor .supplier {
-  max-width: unset;
-}
-
-body.repairs .repair_main {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-
-body.repairs .repair_main.two {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  max-width: unset;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  padding-top: 125px;
-  padding-bottom: 120px;
-}
-
-@media screen and (max-width: 1200px) {
-  body.repairs .repair_main.two {
-    grid-template-columns: 1fr;
-  }
-}
-
-body.repairs .repair_main.two .image img {
-  width: 100%;
-  max-width: 100%;
-}
-
-body.repairs .repair h5 {
-  text-align: center;
-}
-
-body.repairs .repair_item p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-body.repairs .repair_item {
-  align-items: center;
-}
-
-body.repairs .whatweoffer h3 {
-  text-align: center;
-}
-
-body.openerpage .repair_main {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-
-body.openerpage .whatweoffer h3 {
-  text-align: center;
-}
-
-
-body.openerpage .repair_main_2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-body.openerpage .repair_main_2 ul {
-  list-style-type: disc !important; 
-  list-style-position: inside;
-}
-
-body.openerpage .repair_main_2 ul li:before {
-  content: '✔';
-  padding-right: 10px;
-  color: #FA780E;
-}
-
-body.openerpage .opener-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* body.openerpage .opener-content a.view-more {
-  color: #000000;
-} */
