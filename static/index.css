@@ -1658,6 +1658,12 @@ body.tacoma .contact-section p {
   margin: 0 auto;
 }
 
+body.tacoma .landing p {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+}
+
 /* body.openerpage .opener-content a.view-more {
   color: #000000;
 } */
