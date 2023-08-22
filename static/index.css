@@ -1641,6 +1641,10 @@ body.tacoma .dark-bg  {
   color: #ffffff;
 }
 
+body.tacoma .whatweoffer_bg h3 {
+  text-align: center;
+}
+
 body.tacoma .whatweoffer_bg p {
   color: #ffffff;
   text-align: center;
