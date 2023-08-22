@@ -1664,6 +1664,21 @@ body.tacoma .landing p {
   text-align: center;
 }
 
+body.repairs .repair p {
+  color: #fff;
+  max-width: 990px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body.repairs .repair p:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+body.repairs .repair p:last-of-type {
+  margin-bottom: 26px;
+}
+
 /* body.openerpage .opener-content a.view-more {
   color: #000000;
 } */
