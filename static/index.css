@@ -1676,11 +1676,17 @@ body.repairs .repair p {
 }
 
 body.repairs .repair p:not(:last-of-type) {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
-body.repairs .repair p:last-of-type {
-  margin-bottom: 26px;
+body.repairs .repair p.post-text {
+  padding-bottom: 26px;
+  padding-top: 42px;
+}
+
+body.repairs .contact-section p {
+  max-width: 990px;
+  margin: 0 auto;
 }
 
 /* body.openerpage .opener-content a.view-more {
